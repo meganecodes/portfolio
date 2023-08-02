@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/favicon.png">
+    <script src="https://kit.fontawesome.com/5775221b4b.js" crossorigin="anonymous"></script>
+    <!-- <script src = "./app.js" defer></script> -->
+    
+    <title> Megane Akundabo </title>
+</head>
+<body>
+    
+
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <!-- <a href = "#home" class="active"> Home </a> -->
+            <a href = "#about"> About </a> 
+            <a href = "#work"> Projects </a> 
+            <a href = "#contact"> Contact </a> 
+        </nav>
+    </header>
+    
+        
+
+    <!-- Welcome Page Section -->
+    <main>
+        <section class = "home" id="home">
+            
+            <h2> Hi, my name is <span> Megane. </span> <br> I'm a <span class = "auto-type"> designer </span> </h2>
+        </section>
+        
+
+    <!-- About Me Section -->
+        <section class = "about" id = "about">
+            <p> I'm a self-taught developer based in London who recently finished an intensive 12-week software development bootcamp. 
+                I love to push myself to learn more and see what I can create, especially in coding. 
+                When I'm not coding, I'm either baking, watching anime or at the roller skate rink. 
+                I'm excited to showcase what else I learn through my projects and my growth along this journey. <br> </p>
+            
+                <button onclick="location.href='/Docs/Megane Akundabo - CV.pdf';" class="cv"> My_CV.pdf </button>
+            
+        </section>
+        
+       
+        
+    <!-- Project Section -->
+        <section class = "work" id = "work">
+
+            <!-- Image Carousel of work -->
+            <div class = "wrapper">
+                <i id = "left" class="fa-solid fa-chevron-left"></i>
+                <ul class = "carousel">
+                    <li class = "card">
+                        <div class="img"> <img src = "./Images/popcorn.jpg" draggable = "false"> </div>
+                        <a href = "https://replit.com/@MeganeAkundabo/Film-Flix?v=1" target="_blank"> Film Flix </a>
+                        <span> Python | SQLite </span>
+                    </li>
+
+                    <li class = "card">
+                        <div class="img"> <img src = "./Images/timer.jpg"> </div>
+                        <a href = "./countdowntimer/index.html" target="_blank"> Countdown Timer </a>
+                        <span> HTML | CSS | JavaScript </span>
+                    </li>
+
+                    <li class = "card">
+                        <div class="img"> <img src = "./Images/googlecakes.jpg" draggable = "false"> </div>
+                        <a href = "./portfolio/index.html#google-cakes"> Google Cakes </a>
+                        <span> HTML | CSS | Premiere Pro </span>
+                    </li>
+                    <!-- 
+                    <li class = "card">
+                        <div class="img"> <img src = "./breakdown2.jpg" draggable = "false"> </div>
+                        <h3> Car Breakdown Data </h3>
+                        <span> SQL </span>
+                    </li>
+                    -->
+                </ul>
+                <i id = "right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+        
+
+    <!-- Contact Section -->  
+        <section class = "contact" id = "contact">
+              
+            <div class="container">
+                <form action="https://formsubmit.co/cb1c7a68782d5026e660e1aa16062e56" method="POST">
+                    <!-- <h1> Contact </h1> -->
+                    <label for = "name"> Name </label>
+                    <input type ="text" id ="name" name ="name" required>
+                    <label for = "email"> Email </label>
+                    <input type ="text" id ="email" name ="email" required>
+                    <!-- <label for = "message"> Message </label> -->
+                    <label for = "message"> Message </label>
+                    <textarea id ="message" name="message" required></textarea>
+                    <button type ="submit" class = "send_button"> Send </button>
+                </form> 
+            </div>
+
+            <div class="socials">
+                <h1> Get in touch </h1>
+                <h3> Drop me an email or send me a message </h3>
+                <a href =mailto:"meganeakundabo@gmail.com"> meganeakundabo@gmail.com </a>
+                <div class="social_icons">
+                    <a href="https://github.com/meganecodes" target="_blank" title="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/megane-akundabo-53a3b615b/" target="_blank" title="linkedin">
+                        <i class="fa-brands fa-linkedin"> </i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Welcome Page JS typing animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["designer", "developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+            loopCount: Infinity,
+
+        })
+    </script>
+
+<script src="app.js"></script>
+        
+</body>
+
+</html>
