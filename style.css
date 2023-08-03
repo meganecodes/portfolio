@@ -572,7 +572,7 @@ font-size: 28px;
   }
   
   .about p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   /* Work */
@@ -600,7 +600,7 @@ font-size: 28px;
   }
   
   button {
-    font-size: 10px;
+    font-size: 15px;
    /* margin: 15px 0 0 55px; */
   } 
 
@@ -618,6 +618,11 @@ font-size: 28px;
 
   .social_icons i {
     font-size: 20px;
+  }
+
+    button.cv::before, 
+    button.send_button::before {
+    content: none;
   }
 
 }
