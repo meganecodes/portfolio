@@ -7,9 +7,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/*body {
   overflow-y: hidden;
-}
+} */
 
 
 
@@ -19,9 +19,8 @@ nav  {
   font-family: 'Quicksand', sans-serif;
   list-style: none;
   background-color: transparent;
-  padding: 35px 0px;
+  padding: 30px 0 0 60px;
   position: fixed;
-  left: 1300px;
   width: 100%;  
   display: flex;       
 }
@@ -45,52 +44,69 @@ nav a:hover
     opacity: 0.8;
 } 
 
-main {
+.container {
+  min-width: 400px;
+  min-height: 50px;
+  background-color: rgb(242, 151, 207, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+
+
+/* main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-}
+} */
 
 section {
-  height: 100vh; 
+  /*height: 100vh; 
   overflow: hidden;
-  scroll-snap-align: start;
+  scroll-snap-align: start; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .google-cakes {
-  background-image: linear-gradient(rgb(242, 151, 207), whitesmoke);
-  gap: 25px;
-  padding: 50px;
+  background-image: linear-gradient(rgb(238, 75, 176), whitesmoke);
+  padding: 100px;
 }
 
 video {
+  border-radius: 20px;
   margin-left: 150px;
 }
 
 .description {
   margin-right: 150px;
+  padding-left: 80px;
+}
+
+#project-name {
+  text-align: center;
 }
 
 span {
-  line-height: 2;
+  line-height: 3;
   font-size: 15px;
+  color: whitesmoke;
+  /* color: rgb(208, 60, 169); */
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
   font-family: 'Quicksand', sans-serif;
-  color: rgb(68, 65, 65);
+  color: rgb(48, 47, 47);
   font-weight: lighter;
   font-size: 50px;
-}
-
-span {
-  color: rgb(208, 60, 169);
-  font-family: 'Inconsolata', monospace;
-  font-weight: bold;
 }
 
 p {
@@ -98,47 +114,48 @@ p {
 }
 
 
-
-
 /* RESPONSIVE */
-@media screen and (max-width:1000px) {
-  /* Nav */
-  nav {
-    left: 60%;
-  }
-
-  /* Google Cakes */
+@media screen and (max-width:1416px) {
   video, .description {
     margin: 0;
   }
 
+}
+
+
+@media screen and (max-width:1000px) {
+  
+    /* Google Cakes */
+  .container {
+    padding: 0 0 20px 0;
+    margin-top: -50px;
+    display: grid;
+   }
+  
+  .description {
+    grid-row: 1;
+    padding: 50px 50px 50px 50px;
+   }
+
+  .video {
+    margin: auto;
+    align-items: center;
+  }
+  
+}
+
+
+@media screen and (max-width:600px) {
+  nav {
+    padding: 10px 0 0 30px;
+  }
 
   h2 {
     font-size: 45px;
   }
 
- 
-
   p {
     font-size: 14px;
   }
-}
 
-
-@media screen and (max-width:600px) {
- section {
-  height: 150vh;
- }
-  /* Google Cakes */
- .google-cakes {
-  display: grid;
-  
-  
- }
-
- .description {
-  grid-row: 1;
-  margin-bottom: -200px;
-  padding: 50px;
- }
 }
